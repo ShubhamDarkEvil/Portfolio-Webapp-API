@@ -58,7 +58,7 @@ public class AdminService {
 		 return "Document with Name :  "+name+" has been deleted";  
 		 }
 
-
+		 // Rest api to return all documents in a collection 
 		public  List<UserEntity> getAllAdmninDetails() throws InterruptedException, ExecutionException {
 			 Firestore dbFirestore = FirestoreClient.getFirestore();  
 			List<UserEntity> allusersList = new ArrayList<UserEntity>();
